@@ -1,0 +1,165 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #FFB6C1, #FF69B4); /* Pink Gradient Background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Navbar Styling */
+header.app-header {
+    width: 100%;
+    background-color: #2C2C2C; /* Dark Navbar */
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header.app-header h1 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    margin-top: 100px; /* Space for Navbar */
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Form Styling */
+.form-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.form-container input[type="text"],
+.form-container input[type="file"],
+.form-container button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-container input[type="text"] {
+    background: #FFB6C1;
+    color: white;
+    border: 1px solid #FF69B4;
+    transition: background 0.3s ease;
+}
+
+.form-container input[type="text"]:focus {
+    background: #FF69B4;
+}
+
+.form-container button {
+    background: #FF69B4;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background: #FF4081;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Playlist Styling */
+.playlist-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.playlist-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#songList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#songList li {
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header.app-header h1 {
+        font-size: 22px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="file"],
+    .form-container button {
+        font-size: 12px;
+    }
+
+    .playlist-container h2 {
+        font-size: 18px;
+    }
+
+    #songList li {
+        font-size: 12px;
+    }
+}

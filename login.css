@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #FFB6C1, #FF69B4); /* Pink Gradient Background */
+    color: white;
+    text-align: center;
+}
+
+/* Auth Container Styling */
+.auth-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Tab Content Styling */
+.tab-content {
+    display: block;
+    text-align: center;
+}
+
+.tab-content input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #FF69B4;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light Pink Background */
+    color: white;
+}
+
+.tab-content button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF69B4; /* Pink Color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-content button:hover {
+    background-color: #FF4081; /* Light Pink Hover */
+}
+
+/* Forgot and Signup Links */
+.forgot-password, .signup-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: #FF69B4; /* Pink Color */
+}
+
+.forgot-password a, .signup-link a {
+    color: #FF69B4; /* Pink Color */
+    text-decoration: none;
+}
+
+.forgot-password a:hover, .signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Login Section Styling */
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Ablify</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Admin Panel - Ablify</h1>
+    </header>
+    <main class="container">
+        <!-- Add Song Form -->
+        <form id="addSongForm" class="form-container">
+            <input type="text" id="songName" placeholder="Song Name" required>
+            <input type="text" id="artistName" placeholder="Artist Name" required>
+            <input type="file" id="songFile" accept="audio/*" required>
+            <input type="file" id="imageFile" accept="image/*" required>
+            <button type="button" onclick="addSong()">Add Song</button>
+        </form>
+        
+        <!-- Added Songs List -->
+        <div id="adminPlaylist" class="playlist-container">
+            <h2>Added Songs</h2>
+            <ul id="songList">
+                <!-- Dynamically added songs will appear here -->
+            </ul>
+        </div>
+    </main>
+    <script src="admin.js"></script>
+</body>
+</html>
+<form id="bulkUploadForm" class="form-container">
+    <h3>Bulk Upload Songs</h3>
+    <input type="file" id="bulkFile" accept=".csv,.zip" required>
+    <button type="button" onclick="uploadBulkSongs()">Upload Songs</button>
+</form>

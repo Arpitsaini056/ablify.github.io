@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Ablify</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Ablify</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <input type="text" id="searchBar" placeholder="Search songs..." oninput="filterSongs()">
+            <div id="playlist">
+                <div class="song-card" onclick="playSong('Song 1', 'Artist 1')">
+                    <h3>Song 1</h3>
+                    <p>Artist: Artist 1</p>
+                </div>
+                <div class="song-card" onclick="playSong('Song 2', 'Artist 2')">
+                    <h3>Song 2</h3>
+                    <p>Artist: Artist 2</p>
+                </div>
+                <!-- Add more songs here -->
+            </div>
+        </main>
+    </div>
+
+    <footer class="music-player">
+        <div id="current-song">
+            <p id="current-song-name">No song playing</p>
+            <p id="current-artist-name"></p>
+        </div>
+        <div class="controls">
+            <button onclick="previousSong()">⏮️</button>
+            <button onclick="playPause()">⏯️</button>
+            <button onclick="nextSong()">⏭️</button>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
